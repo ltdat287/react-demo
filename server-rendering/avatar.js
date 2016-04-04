@@ -6,7 +6,7 @@ var React = require('react'),
     //request = require("superagent");
 var Avatar = React.createClass({
   propTypes: {
-    id: React.PropTypes.string.isRequired,
+    id: React.PropTypes.number.isRequired,
     name: React.PropTypes.string.isRequired,
     width: React.PropTypes.number.isRequired,
     height: React.PropTypes.number.isRequired,

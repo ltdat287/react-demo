@@ -1,7 +1,7 @@
 'use strict';
 var Express = require('express'),
     React   = require('react'),
-    Jade    = require('jade');
+    jade    = require('jade');
 
 require('node-jsx').install({ harmony: true });
 
@@ -12,7 +12,7 @@ var app     = Express();
 
 // Use jade template
 app.set('views', './');
-app.set('view engine', 'Jade');
+app.set('view engine', 'jade');
 app.use(Express.static(__dirname + '/'));
 
 app.get('/', function(req, res){
